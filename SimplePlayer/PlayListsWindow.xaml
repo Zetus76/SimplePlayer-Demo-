@@ -1,0 +1,23 @@
+﻿<Window x:Class="SimplePlayer.PlayListsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimplePlayer"
+        mc:Ignorable="d" Height="408" Width="442.316" MinWidth="340" MinHeight="304" Title="SimplePlayer">
+    <Grid>
+        <GroupBox Header="PlayLists" Margin="12,11,20,20">
+            <Grid Margin="2,189,188,-5">
+                <TextBox x:Name="PlayListName" Margin="3,0,3,10" TextWrapping="Wrap" Height="23" VerticalAlignment="Bottom"/>
+                <Grid Margin="0,0,-190,0" HorizontalAlignment="Right" Width="188">
+                    <Button x:Name="BtnDelete" Content="Delete" HorizontalAlignment="Left" Margin="2,0,0,10" Width="50" Height="23" VerticalAlignment="Bottom" Click="BtnDelete_Click"/>
+                    <Button x:Name="BtnLoad" Content="Load" HorizontalAlignment="Left" Margin="133,0,0,10" Width="50" Height="23" VerticalAlignment="Bottom" Click="BtnLoad_Click"/>
+                    <Button x:Name="BtnSave" Content="Save" HorizontalAlignment="Left" Margin="77,0,0,10" Width="50" Height="23" VerticalAlignment="Bottom" Click="BtnSave_Click"/>
+                </Grid>
+                <Grid Margin="3,-179,-185,38">
+                    <ListBox x:Name="PlayListsBox" SelectionChanged="PlayListsBox_SelectionChanged" MouseDoubleClick="PlayListsBox_MouseDoubleClick"/>
+                </Grid>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
