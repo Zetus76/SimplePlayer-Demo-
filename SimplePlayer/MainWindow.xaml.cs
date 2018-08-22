@@ -13,7 +13,7 @@ using SimplePlayer.Source;
 
 namespace SimplePlayer
 {
-    public delegate void MyDelegate( List<string> data );   // создаём делегат
+    public delegate void OnTrackListLoaded( List<string> data );   // создаём делегат
 
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -681,7 +681,7 @@ namespace SimplePlayer
                 tl.Add(track.Path);
             }
 
-            PlayListsWindow PlayLIstBD = new PlayListsWindow (tl , new MyDelegate(LoadTracksOfPlayList)); // создаём объект(окно)  
+            PlayListsWindow PlayLIstBD = new PlayListsWindow (tl , new OnTrackListLoaded(LoadTracksOfPlayList)); // создаём объект(окно)  
         }
         #endregion
 

@@ -27,7 +27,7 @@ namespace SimplePlayer
     public partial class PlayListsWindow : Window
     {
         List<string> trackslist;
-        private MyDelegate d;
+        private OnTrackListLoaded d;
 
         #region Инициализация (конструктор)
 
@@ -35,7 +35,7 @@ namespace SimplePlayer
         /// Конструктор
         /// </summary>
         /// <param name="mode"></param>
-        public PlayListsWindow (List<string> tl , MyDelegate sender)
+        public PlayListsWindow (List<string> tl , OnTrackListLoaded sender)
         {
             trackslist = tl;                                            // получаем список трек листа (полные пути к трекам)
             d = sender;
