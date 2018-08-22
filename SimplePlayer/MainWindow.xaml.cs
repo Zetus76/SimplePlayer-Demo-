@@ -13,7 +13,7 @@ using SimplePlayer.Source;
 
 namespace SimplePlayer
 {
-    public delegate void OnTrackListLoaded( List<string> data );   // создаём делегат
+    public delegate void OnTrackListLoaded( List<string> data );   // создание делегата
 
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -190,7 +190,6 @@ namespace SimplePlayer
 
         private const int WM_SYSCOMMAND = 0x0112;
         private const int SC_MINIMIZE = 0xf020;
-        //private const int SC_MAXIMIZE = 0xf030;
 
         private IntPtr WndProc(IntPtr hwnd, int msg, IntPtr wParam, IntPtr lParam, ref bool handled)
         {

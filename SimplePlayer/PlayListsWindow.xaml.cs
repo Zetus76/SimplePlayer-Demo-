@@ -54,16 +54,10 @@ namespace SimplePlayer
         private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
 
         private const int GWL_STYLE = -16;
-        //private const int WS_MAXIMIZEBOX = 0x10000;
         private const int WS_MINIMIZEBOX = 0x20000;
 
         private void Window_SourceInitialized(object sender, EventArgs e)
         {
-            /*var hwnd = new WindowInteropHelper((Window)sender).Handle;
-            var value = GetWindowLong(hwnd, GWL_STYLE);
-            SetWindowLong(hwnd, GWL_STYLE, (int)(value & ~WS_MAXIMIZEBOX));
-            */
-
             var hwnd_m = new WindowInteropHelper((Window)sender).Handle;
             var value_m = GetWindowLong(hwnd_m, GWL_STYLE);
             SetWindowLong(hwnd_m, GWL_STYLE, (int)(value_m & ~WS_MINIMIZEBOX));

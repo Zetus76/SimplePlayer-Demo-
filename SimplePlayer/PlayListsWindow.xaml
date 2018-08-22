@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimplePlayer"
-        mc:Ignorable="d" Height="408" Width="442.316" MinWidth="340" MinHeight="304" Title="SimplePlayer">
+        mc:Ignorable="d" Height="408" Width="442.316" MinWidth="340" MinHeight="304" Title="SimplePlayer (Demo)">
     <Grid>
         <GroupBox Header="PlayLists" Margin="12,11,20,20">
             <Grid Margin="2,189,188,-5">

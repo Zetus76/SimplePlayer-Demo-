@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         mc:Ignorable="d"
-        Title="SimplePlayer" Height="465.167" Width="442.667" MinWidth="442.667" MaxWidth="442.667" StateChanged="SimplePlayerwindow_StateChanged" MinHeight="465.167">
+        Title="SimplePlayer (Demo)" Height="465.167" Width="442.667" MinWidth="442.667" MaxWidth="442.667" StateChanged="SimplePlayerwindow_StateChanged" MinHeight="465.167">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="46*"/>
@@ -56,6 +56,7 @@
                     <ColumnDefinition Width="147*"/>
                     <ColumnDefinition Width="65*"/>
                 </Grid.ColumnDefinitions>
+                <Label Content="BASS" HorizontalAlignment="Left" Margin="69,0,0,0" VerticalAlignment="Top" Width="65" FontWeight="Bold" FontSize="22" Height="41" Foreground="#FF18B944"/>
             </Grid>
         </GroupBox>
         <Label x:Name="LabelFormat" Content="" HorizontalAlignment="Left" Margin="131,35,0,0" VerticalAlignment="Top" Width="58" Height="26" FontSize="10" Background="#FFB6B6B6" Foreground="Black" FontWeight="Bold"/>
