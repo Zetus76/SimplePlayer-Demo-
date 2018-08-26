@@ -21,13 +21,13 @@
             </GroupBox.RenderTransform>
             <Slider x:Name="SldrTimePlay" HorizontalAlignment="Left" VerticalAlignment="Top" Width="234" ValueChanged="SldrTimePlay_ValueChanged" BorderThickness="0" Margin="8,3,0,0" FlowDirection="LeftToRight"/>
         </GroupBox>
-        <GroupBox x:Name="GroupBoxVolumeTrack" Header="0" Margin="41,60,0,0" FlowDirection="RightToLeft" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Width="143" Grid.Column="1">
+        <GroupBox x:Name="GroupBoxVolumeTrack" Header="0" Margin="46,60,0,0" FlowDirection="RightToLeft" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Width="143" Grid.Column="1">
             <Slider x:Name="SldrTrackVolume" HorizontalAlignment="Left" VerticalAlignment="Top" Width="121" Maximum="100" ValueChanged="SldrTrackVolume_ValueChanged" Height="21" FlowDirection="LeftToRight" Margin="4,3,0,0"/>
         </GroupBox>
         <GroupBox x:Name="GroupBoxPlayList" Header="Tracks : " Margin="10,162,0,66" HorizontalAlignment="Left" Width="406" Grid.ColumnSpan="2">
             <ListBox x:Name="TrackListBox" HorizontalAlignment="Left" Margin="3,7,0,2" Width="387" MouseDoubleClick="TrackListBox_MouseDoubleClick" BorderThickness="1"/>
         </GroupBox>
-        <GroupBox Header="TrackList" HorizontalAlignment="Left" Margin="10,0,0,15" Width="250" Height="51" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
+        <GroupBox Header="TrackList" HorizontalAlignment="Left" Margin="10,0,0,15" Width="248" Height="51" VerticalAlignment="Bottom" Grid.ColumnSpan="2">
             <Grid HorizontalAlignment="Left" Height="26" Margin="-10,0,0,0" VerticalAlignment="Top" Width="229">
                 <Button x:Name="BtnClearTrackList" Content="ClearTL" HorizontalAlignment="Left" Margin="14,4,0,0" Width="44" Click="BtnClearTrackList_Click" Height="20" VerticalAlignment="Top"/>
                 <Button x:Name="BtnMoveTrackDown" Content="DownTR" HorizontalAlignment="Left" Margin="63,4,0,0" Width="49" Click="BtnMoveTrackDown_Click" Height="20" VerticalAlignment="Top"/>
@@ -65,7 +65,7 @@
                 <Button x:Name="BtnPlayList" Content="Options" HorizontalAlignment="Left" Margin="73,2,0,0" Width="67" Height="20" VerticalAlignment="Top" Click="BtnPlayList_Click"/>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Files" HorizontalAlignment="Left" Height="50" Margin="42,107,0,0" VerticalAlignment="Top" Width="142" Grid.Column="1">
+        <GroupBox Header="Files" HorizontalAlignment="Left" Height="50" Margin="47,107,0,0" VerticalAlignment="Top" Width="142" Grid.Column="1">
             <Grid HorizontalAlignment="Left" Height="37" Margin="22,-9,0,0" VerticalAlignment="Top" Width="107">
                 <Button x:Name="BtnLoadTraks" Content="Open" HorizontalAlignment="Left" Margin="38,12,0,0" VerticalAlignment="Top" Width="66" Click="BtnLoadTraks_Click"/>
             </Grid>
